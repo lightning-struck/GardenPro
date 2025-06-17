@@ -1,0 +1,30 @@
+@use '../../../styles/variables' as v;
+
+.banner {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: v.$section-mb;
+
+  &_title {
+    font-size: 96px;
+    font-weight: 700;
+    color: v.$color-white;
+    z-index: 100;
+    margin-bottom: 40px;
+  }
+
+  &_image {
+    filter: brightness(60%);
+    object-position: 0 54%;
+  }
+  &_btn{
+    width: 218px ;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 100;
+}

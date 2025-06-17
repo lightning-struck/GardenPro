@@ -1,0 +1,38 @@
+@use '../../../../../styles/variables' as v;
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 548px;
+  gap: 32px;
+  margin-bottom: 32px;
+  &_socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &_item {
+      width: 43px;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: ease .3s;
+
+      &:hover {
+        opacity: 0.8;
+
+      }
+    }
+  }
+
+  &_phone {
+    font-weight: 600;
+    font-size: 40px;
+    color: v.$color-black;
+    text-decoration: none;
+    transition: ease .3s;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}

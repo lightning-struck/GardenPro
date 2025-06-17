@@ -1,0 +1,7 @@
+@use '../../../../../styles/variables' as v;
+
+.map {
+  margin-bottom: v.$section-mb;
+  border-radius: 12px;
+  overflow: hidden;
+}

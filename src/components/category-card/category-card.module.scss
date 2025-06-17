@@ -1,0 +1,41 @@
+@use '../../styles/variables' as v;
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  &:hover{
+    .category_title{
+      color: v.$color-green;
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  &_image {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: ease .4s;
+    }
+  }
+
+  &_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color:  v.$color-black;
+    transition: ease .4s;
+  }
+}

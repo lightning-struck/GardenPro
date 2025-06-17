@@ -1,0 +1,22 @@
+@use '../../styles/variables' as v;
+
+.block {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: v.$color-light-grey;
+
+  &_label {
+    font-weight: 500;
+    font-size: 20px;
+    color: v.$color-txt-grey
+  }
+
+  &_text {
+    font-weight: 600;
+    font-size: 40px;
+    color: v.$color-black;
+  }
+}

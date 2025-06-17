@@ -1,0 +1,43 @@
+@use '../../../styles/variables' as v;
+
+.header {
+  background-color: v.$color-white;
+  border-bottom: 1px solid v.$color-grey-divider;
+  padding: 0 40px;
+  &_content{
+    padding-top: 30px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo{
+    transition: ease .2s;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  &_nav{
+    display: flex;
+    gap: 32px;
+    &_item{
+
+      font-weight: 500;
+      color: v.$color-black;
+      text-decoration: none;
+      transition: ease .2s;
+      &:hover{
+        color: v.$color-green;
+      }
+    }
+  }
+  &_cart{
+    position: relative;
+    &_link{
+      transition: ease .2s;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+}

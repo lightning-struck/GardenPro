@@ -1,0 +1,49 @@
+@use '../../styles/variables' as v;
+
+.section {
+  margin-bottom: v.$section-mb;
+
+
+  &_heading {
+
+    h1,
+    h2 {
+      font-size: 64px;
+      color: v.$color-black;
+      font-weight: 700;
+    }
+
+    margin-bottom: 40px;
+    display: flex;
+    gap: 32px;
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    &_item {
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      padding: 8px 16px;
+      border-radius: 6px;
+      color: v.$color-grey-divider;
+      border: 1px solid v.$color-grey-divider;
+      text-decoration: none;
+      flex: 0 0 auto;
+      transition: all .3s;
+      &:hover{
+        color: v.$color-black;
+      }
+    }
+  }
+
+  &_line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: v.$color-grey-divider;
+  }
+}

@@ -1,0 +1,45 @@
+@use '../../styles/variables' as v;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  text-align: center;
+  border: 1px solid transparent;
+  font-family: Montserrat, Montserrat Fallback;
+  font-style: normal;
+
+  &:hover {
+    background-color: v.$color-black;
+    color: v.$color-white;
+  }
+
+  &--green {
+    background-color: v.$color-green;
+    color: v.$color-white;
+  }
+
+  &--white {
+    background-color: v.$color-white;
+    color: v.$color-black;
+  }
+
+  &--outlined {
+    background-color: v.$color-white;
+    color: v.$color-black;
+    border-color: v.$color-black;
+  }
+
+  &--disabled {
+    color: v.$color-green;
+    background-color: v.$color-light-grey;
+  }
+}
