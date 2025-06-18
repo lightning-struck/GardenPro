@@ -3,20 +3,35 @@ import React, { useState } from 'react'
 import s from './cart-product.module.scss'
 import { ProductCounter } from '@/shared/product-counter/product-counter'
 import { Remove } from '@/shared/icons/Remove'
-export const CartProduct = () => {
-  const [countValue, setValue] = useState<number>(1)
+import { removeFromCart } from '@/lib/redux/slices/cart/cartSlice'
+import { IProductCardProps } from '@/components/product-card/product-card.interface'
+import { useDispatch } from 'react-redux'
+export const CartProduct: React.FC<IProductCardProps> = ({ id, image, title, real_price, discount_price, alt = '' }) => {
+  const dispatch = useDispatch()
+  const handleRemove = () => {
+    dispatch(removeFromCart(id))
+  }
   return (
     <div className={s.product}>
       <div className={s.product_img_wrapper}>
-        <img src={'/images/page-product.png'} alt='product' />
+        <img src={image} alt={title} />
       </div>
       <div className={s.product_content}>
-        <div className={s.product_content_title}><span>Secateurs</span><button><Remove /></button></div>
+        <div className={s.product_content_title}><span>{title}</span><button onClick={handleRemove}><Remove /></button></div>
         <div className={s.product_content_options}>
-          <ProductCounter value={countValue} setValue={setValue} />
-          <div className={s.product_content_prices}>
-            <span className={s.product_price}>$155<s>$240</s>  </span>
-          </div>
+          <ProductCounter productId={id} />
+          {
+            discount_price ? <div className={s.product_content_prices}>
+              <span className={s.product_price}>${discount_price}
+                <s>${real_price}</s>
+              </span>
+            </div> :
+              <div className={s.product_content_prices}>
+                <span className={s.product_price}>${real_price}
+
+                </span>
+              </div>
+          }
         </div>
       </div>
 

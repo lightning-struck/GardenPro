@@ -18,7 +18,9 @@ export const Product: React.FC<IProductPageProps> = (props) => {
   }
 
 
-  const { image = '/images/page-product.png', title = "Secateurs", real_price = 240, discount_price = 199, description = des } = props
+  const { image = '/images/page-product.png', title = "Secateurs", real_price = 240, discount_price = 199, description = des, id, alt='' } = props
+
+  const product = {...props}
 
   return (
     <Section topMargin nav_disabled remove_heading nav_link='' nav_text='' title=''>
@@ -30,7 +32,7 @@ export const Product: React.FC<IProductPageProps> = (props) => {
           <div className={s.product_prices}>
             {renderPrice(discount_price, real_price)}
           </div>
-          <CartAdder />
+          <CartAdder product={product} />
           <div className={s.product_description}>
             <p className={s.product_description_title}>Description</p>
             {description && <article dangerouslySetInnerHTML={{ __html: description }} />}

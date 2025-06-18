@@ -34,8 +34,9 @@
 
   &--outlined {
     background-color: v.$color-white;
-    color: v.$color-black;
+    color: v.$color-black !important;
     border-color: v.$color-black;
+    pointer-events: none !important;
   }
 
   &--disabled {
