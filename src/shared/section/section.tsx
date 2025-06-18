@@ -5,10 +5,10 @@ import { Container } from '../container/container'
 import Link from 'next/link'
 import cn from 'classnames'
 export const Section: React.FC<ISectionProps> = (props) => {
-  const { children, title, nav_link, nav_text, nav_disabled, isH1, className, remove_heading } = props
+  const { children, title, nav_link, nav_text, nav_disabled, isH1, className, remove_heading, topMargin } = props
 
   return (
-    <section className={cn(s.section, className)}>
+    <section className={cn(s.section, topMargin && s.section_mt, className)}>
       <Container>
 
         {remove_heading !== true && <div className={s.section_heading}>

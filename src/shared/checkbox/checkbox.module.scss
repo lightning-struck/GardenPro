@@ -1,0 +1,32 @@
+.customCheckbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.hiddenCheckbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkboxDisplay {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #DDDDDD;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+
+  .hiddenCheckbox:checked + & {
+    background-color: #339933;
+    border-color: #339933;
+  }
+
+  .hiddenCheckbox:focus + & {
+    box-shadow: 0 0 0 2px rgba(51, 153, 51, 0.2);
+  }
+}

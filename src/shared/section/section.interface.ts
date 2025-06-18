@@ -7,4 +7,5 @@ export interface ISectionProps {
   isH1?: boolean
   className?: string
   remove_heading?: boolean
+  topMargin?: boolean
 }

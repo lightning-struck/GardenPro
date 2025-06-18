@@ -1,0 +1,23 @@
+@use '../../styles/variables' as v;
+
+.input {
+  padding: 8px 16px;
+
+  &::placeholder {
+    color: v.$color-txt-grey;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  color: v.$color-black;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid v.$color-grey-divider;
+
+  &_price {
+    min-width: 112px;
+    max-height: 36px;
+    width: 112px;
+  }
+}

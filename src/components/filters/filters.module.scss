@@ -1,0 +1,28 @@
+@use '../../styles/variables' as v;
+
+.price {
+
+
+  &_inputs {
+    display: flex;
+    gap: 16px;
+  }
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 20px;
+  color: v.$color-black;
+}
+.filters{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
