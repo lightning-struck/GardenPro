@@ -1,0 +1,44 @@
+@use '../../styles/variables' as v;
+
+.total {
+
+  width: 100%;
+  position: sticky;
+  background-color: v.$color-light-grey;
+  border-radius: 12px;
+  top: 30px;
+  height: auto;
+  &_wrapper {
+    padding: 32px;
+    height: 518px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: v.$color-black;
+  }
+
+  &_info {
+    margin-bottom: 32px;
+
+    &_row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    &_item {
+      font-weight: 500;
+      font-size: 40px;
+      color: v.$color-txt-grey;
+    }
+
+    &_price {
+      font-weight: 700;
+      font-size: 64px;
+      color: v.$color-black;
+    }
+  }
+}

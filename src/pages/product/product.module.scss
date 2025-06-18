@@ -1,0 +1,66 @@
+@use '../../styles/variables' as v;
+
+.product {
+  display: grid;
+  grid-template-columns: 780px 1fr;
+  gap: 32px;
+
+  &_image {
+    height: 572px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: v.$color-black;
+    margin-bottom: 32px;
+  }
+
+  &_price {
+    font-weight: 700;
+    font-size: 64px;
+    color: v.$color-black;
+
+    s {
+      position: relative;
+      font-weight: 500;
+      font-size: 40px;
+      color: v.$color-txt-grey;
+      margin-left: 20px;
+    }
+  }
+
+  &_percent {
+    top: -19px;
+    right: -90px;
+  }
+
+  &_prices {
+    margin-bottom: 32px;
+  }
+
+  &_content {
+    width: 100%;
+  }
+
+  &_description {
+    &_title {
+      margin-bottom: 16px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 20px;
+      color: v.$color-black;
+    }
+
+    article {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: v.$color-black;
+    }
+  }
+}

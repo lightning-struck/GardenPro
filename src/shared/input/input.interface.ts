@@ -6,4 +6,5 @@ export interface InputProps<T extends FieldValues>
   label?: string;
   validation?: RegisterOptions<T, FieldPath<T>>;
   errors?: FieldValues;
+  variant: 'order' | 'discount'
 }

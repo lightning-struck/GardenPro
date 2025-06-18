@@ -10,7 +10,7 @@ export const DiscountForm = () => {
         <h3 className={s.form_title}>5% off on the first order</h3>
         <div className={s.form_content}>
           <img src="/images/discount_image.png" alt="5% off on the first order" className={s.image} />
-          <FormDiscount />
+          <FormDiscount form_variant='discount' endpoint='' />
         </div>
       </div>
     </Section>

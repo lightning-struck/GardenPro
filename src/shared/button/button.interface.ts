@@ -5,4 +5,6 @@ export interface IButtonProps {
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
   className?: string;
+  isLink?: boolean
+  href?: string
 }

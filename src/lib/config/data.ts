@@ -58,38 +58,42 @@ export const home_categories:  ICategoryCardProps [] = [
 
 ]
 
-export const home_sales: IProductCardProps [] = [
+export const home_sales: IProductCardProps[] = [
   {
-    id: 1, 
+    id: 1,
     title: 'Decorative forged bridge',
     image: '/images/product_1.png',
     alt: 'Decorative forged bridge',
     discount_price: 500,
-    real_price: 1000
+    real_price: 1000,
+    link: '/products/decorative-forged-bridge'
   },
   {
-    id: 2, 
+    id: 2,
     title: 'Flower basket',
     image: '/images/product_2.png',
     alt: 'Flower basket',
     discount_price: 100,
-    real_price: 150
+    real_price: 150,
+    link: '/products/flower-basket'
   },
   {
-    id: 3, 
+    id: 3,
     title: 'Aquarium lock',
     image: '/images/product_3.png',
     alt: 'Aquarium lock',
     discount_price: 150,
-    real_price: 200
+    real_price: 200,
+    link: '/products/aquarium-lock'
   },
   {
-    id: 4, 
+    id: 4,
     title: 'Secateurs',
     image: '/images/product_4.png',
     alt: 'Secateurs',
     discount_price: 199,
-    real_price: 240
+    real_price: 240,
+    link: '/products/secateurs'
   },
 ]
 
@@ -152,69 +156,77 @@ export const sorting_list: IDropdownProps = {
   name: 'sort'
 }
 
-export const category_products: IProductCardProps [] = [
+export const category_products: IProductCardProps[] = [
   {
-    id: 1, 
+    id: 1,
     title: 'Decorative forged bridge',
     image: '/images/product_1.png',
     alt: 'Decorative forged bridge',
     discount_price: 500,
-    real_price: 1000
+    real_price: 1000,
+    link: '/products/decorative-forged-bridge'
   },
   {
-    id: 2, 
+    id: 2,
     title: 'Flower basket',
     image: '/images/product_2.png',
     alt: 'Flower basket',
     discount_price: 100,
-    real_price: 150
+    real_price: 150,
+    link: '/products/flower-basket'
   },
   {
-    id: 3, 
+    id: 3,
     title: 'Aquarium lock',
     image: '/images/product_3.png',
     alt: 'Aquarium lock',
     discount_price: 150,
-    real_price: 200
+    real_price: 200,
+    link: '/products/aquarium-lock'
   },
   {
-    id: 4, 
+    id: 4,
     title: 'Secateurs',
     image: '/images/product_4.png',
     alt: 'Secateurs',
     discount_price: null,
-    real_price: 99
+    real_price: 99,
+    link: '/products/secateurs'
   },
   {
-    id: 5, 
+    id: 5,
     title: 'Decorative forged bridge',
     image: '/images/product_1.png',
     alt: 'Decorative forged bridge',
     discount_price: null,
-    real_price: 1000
+    real_price: 1000,
+    link: '/products/decorative-forged-bridge'
   },
   {
-    id: 6, 
+    id: 6,
     title: 'Flower basket',
     image: '/images/product_2.png',
     alt: 'Flower basket',
     discount_price: 100,
-    real_price: 150
+    real_price: 150,
+    link: '/products/flower-basket'
   },
   {
-    id: 7, 
+    id: 7,
     title: 'Aquarium lock',
     image: '/images/product_3.png',
     alt: 'Aquarium lock',
     discount_price: 150,
-    real_price: 200
+    real_price: 200,
+    link: '/products/aquarium-lock'
   },
   {
-    id: 8, 
+    id: 8,
     title: 'Secateurs',
     image: '/images/product_4.png',
     alt: 'Secateurs',
     discount_price: 199,
-    real_price: 240
+    real_price: 240,
+    link: '/products/secateurs'
   },
 ]

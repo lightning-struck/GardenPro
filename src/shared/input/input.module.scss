@@ -30,7 +30,6 @@
     font-size: 16px;
     background: #0B710B;
     top: 0;
-
   }
 
   input {
@@ -53,4 +52,25 @@
   bottom: -22px;
   left: 10px;
   color: white;
+}
+
+.input_container_order{
+  border-color: transparent;
+  border-radius: 6px;
+  &:focus-within .input_label {
+    font-size: 16px;
+    background: transparent;
+    top: 0;
+  }
+  label{
+    color: v.$color-txt-grey;
+  }
+  input{
+    border-radius: 6px;
+    background-color: white;
+    
+  }
+}
+.error_order{
+  color:rgb(155, 3, 3);
 }

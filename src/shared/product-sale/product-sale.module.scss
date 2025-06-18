@@ -1,0 +1,17 @@
+@use '../../styles/variables' as v;
+
+.product_sale {
+    position: absolute;
+    background-color: v.$color-green;
+    color: v.$color-white;
+    height: 34px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
+    min-height: 40px;
+    border-radius: 6px;
+  }

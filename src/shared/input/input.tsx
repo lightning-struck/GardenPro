@@ -6,6 +6,7 @@ import cn from 'classnames'
 export const Input = <T extends FieldValues>({
   name,
   label,
+  variant,
   validation,
   errors,
   ...rest
@@ -26,7 +27,7 @@ export const Input = <T extends FieldValues>({
   const { ref: registerRef, ...registerProps } = register(name, validation);
 
   return (
-    <div className={cn(s.input_container, errorMessage && s.input_error)}>
+    <div className={cn(s.input_container, errorMessage && s.input_error,variant === 'order' && s.input_container_order)}>
       {label && (
         <label htmlFor={name} className={cn(s.input_label, (labelActive || rest.value) && s.input_label_active)}>
           {label}
@@ -42,7 +43,7 @@ export const Input = <T extends FieldValues>({
         {...registerProps}
         {...rest}
       />
-      {errorMessage && <span className={s.error}>{errorMessage}</span>}
+      {errorMessage && <span className={cn(s.error, variant === 'order' && s.error_order)}>{errorMessage}</span>}
     </div>
   );
 };

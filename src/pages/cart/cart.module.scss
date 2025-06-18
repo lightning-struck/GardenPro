@@ -1,0 +1,27 @@
+@use '../../styles/variables' as v;
+
+.section {
+  margin-top: 40px;
+}
+
+.content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 548px;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.empty {
+  
+
+    font-weight: 500;
+    font-size: 20px;
+    color: v.$color-black;
+    margin-bottom: 32px;
+}
+.btn{
+  width: 247px;
+  text-decoration: none;
+  height: 24px;
+}

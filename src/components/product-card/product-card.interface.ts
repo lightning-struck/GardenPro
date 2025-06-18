@@ -5,4 +5,5 @@ export interface IProductCardProps {
   image: string
   alt: string
   title: string
+  link: string
 }
