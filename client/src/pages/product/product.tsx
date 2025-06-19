@@ -1,13 +1,12 @@
 import React from 'react'
 import s from './product.module.scss'
-import { IProductPageProps } from './product.interface'
+import { IProductPageProps } from '../../lib/types/product/product.interface'
 import { Section } from '@/shared/section/section'
 import { ProductSale } from '@/shared/product-sale/product-sale'
 import { CartAdder } from '@/components/product-card/ui/cart adder/cart-adder'
 import { IProductCardProps } from '@/components/product-card/product-card.interface'
 
-export const Product: React.FC<IProductCardProps> = (props) => {
-
+const Product: React.FC<IProductCardProps> = (props) => {
 
   const renderPrice = (discount_price: number | null | undefined, real_price: number) => {
     if (discount_price) {
@@ -45,3 +44,4 @@ export const Product: React.FC<IProductCardProps> = (props) => {
     </Section>
   )
 }
+export default Product;

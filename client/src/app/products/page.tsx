@@ -1,5 +1,5 @@
 import React from 'react'
-import { Products as ProductsPage } from '@/pages/products/products'
+import ProductsPage from '@/pages/products/products'
 import { category_products } from '@/lib/config/data'
 import { serverFetch } from '@/lib/api/api'
 import { DataProduct } from '@/lib/types/category/category-page.interface'

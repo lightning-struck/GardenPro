@@ -4,7 +4,7 @@
 
 
 
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -14,4 +14,13 @@ main{
   width: 100%;
   max-width: v.$container-max-width;
   margin: 0 auto;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+.bodyFixed {
+  overflow: hidden;
 }

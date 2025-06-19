@@ -1,4 +1,4 @@
-import { Products } from "@/pages/products/products";
+import Products from "@/pages/products/products";
 import { category_products } from "@/lib/config/data";
 import { serverFetch } from "@/lib/api/api";
 import { CategoryPageData } from "@/lib/types/category/category-page.interface";
@@ -8,18 +8,19 @@ const filters = {
 }
 
 
-export default async function Category({ params }: { params: { id: string } }) {
-  console.log(params.id);
-  const fetchedData = await serverFetch<CategoryPageData>(`/categories/${params.id}`)
-  const {data, category} = fetchedData
+export default async function Category({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const fetchedData = await serverFetch<CategoryPageData>(`/categories/${id}`)
+
+  const { data, category } = fetchedData
   const adaptedProducts = data.map(product => ({
     id: product.id,
     real_price: product.price,
     discount_price: product.discont_price,
     image: product.image,
-    alt: product.title, 
+    alt: product.title,
     title: product.title,
-    link: `/products/${product.id}` 
+    link: `/products/${product.id}`
   }));
   return <Products pageTitle={category.title} products={adaptedProducts} filters={filters} />
 }

@@ -3,7 +3,7 @@ import s from './not-found.module.scss'
 import { Section } from '@/shared/section/section'
 import { Button } from '@/shared/button/button'
 
-export const NotFound = () => {
+const NotFound= () => {
   return (
     <Section className={s.section} nav_link='' nav_disabled nav_text='' title=''>
       <div className={s.wrapper}>
@@ -20,3 +20,4 @@ export const NotFound = () => {
     </Section>
   )
 }
+export default NotFound;

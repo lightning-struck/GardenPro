@@ -6,7 +6,8 @@ import { Header } from "@/components/layout/header/header";
 
 import { Montserrat } from 'next/font/google';
 import { Footer } from "@/components/layout/footer/footer";
-import ReduxProvider from "@/lib/redux/providers/Providers";
+import {ReduxProvider} from "@/lib/redux/providers/Providers";
+import { Popup } from "@/components/popup/popup";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -34,6 +35,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <Popup />
           <Footer />
         </ReduxProvider>
       </body>

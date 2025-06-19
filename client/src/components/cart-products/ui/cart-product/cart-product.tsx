@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux'
 export const CartProduct: React.FC<IProductCardProps> = ({ id, image, title, real_price, discount_price, alt = '' }) => {
   const dispatch = useDispatch()
   const handleRemove = () => {
-    dispatch(removeFromCart(id))
+    dispatch(removeFromCart(Number(id)))
   }
   return (
     <div className={s.product}>
@@ -19,7 +19,7 @@ export const CartProduct: React.FC<IProductCardProps> = ({ id, image, title, rea
       <div className={s.product_content}>
         <div className={s.product_content_title}><span>{title}</span><button onClick={handleRemove}><Remove /></button></div>
         <div className={s.product_content_options}>
-          <ProductCounter productId={id} />
+          <ProductCounter productId={Number(id)} />
           {
             discount_price ? <div className={s.product_content_prices}>
               <span className={s.product_price}>${discount_price}

@@ -32,24 +32,28 @@ export const header_paths: IHeaderPaths[] = [
 
 export const home_categories:  ICategoryCardProps [] = [
   {
+    id:1,
     image: '/images/cat_1.png',
     alt: 'Fertilizer',
     title: 'Fertilizer',
     link: CATEGORIES_PAGE_PATH + '/'
   },
   {
+    id:2,
     image: '/images/cat_2.png',
     alt: 'Protective products and septic tanks',
     title: 'Protective products and septic tanks',
     link: CATEGORIES_PAGE_PATH + '/'
   },
   {
+     id:3,
     image: '/images/cat_3.png',
     alt: 'Planting material	',
     title: 'Planting material	',
     link: CATEGORIES_PAGE_PATH + '/'
   },
   {
+    id:4,
     image: '/images/cat_4.png',
     alt: 'Tools and equipment',
     title: 'Tools and equipment',
@@ -99,30 +103,35 @@ export const home_sales: IProductCardProps[] = [
 
 export const categories:  ICategoryCardProps [] = [
   {
+    id: 1,
     image: '/images/cat_1.png',
     alt: 'Fertilizer',
     title: 'Fertilizer',
     link: CATEGORIES_PAGE_PATH + '/fertilizer'
   },
   {
+    id: 2,
     image: '/images/cat_2.png',
     alt: 'Protective products and septic tanks',
     title: 'Protective products and septic tanks',
     link: CATEGORIES_PAGE_PATH + '/protective-products-and-septic-tanks'
   },
   {
+    id:3,
     image: '/images/cat_3.png',
     alt: 'Planting material',
     title: 'Planting material',
     link: CATEGORIES_PAGE_PATH + '/planting-material'
   },
   {
+    id:4,
     image: '/images/cat_4.png',
     alt: 'Tools and equipment',
     title: 'Tools and equipment',
     link: CATEGORIES_PAGE_PATH + '/tools-and-equipment'
   },
   {
+    id:5,
     image: '/images/cat_5.jpg',
     alt: 'Pots and planters',
     title: 'Pots and planters',

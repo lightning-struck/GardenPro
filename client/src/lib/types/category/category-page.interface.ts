@@ -1,5 +1,5 @@
 import { IProductCardProps } from "@/components/product-card/product-card.interface";
-import { IProductPageProps } from "@/pages/product/product.interface";
+import { IProductPageProps } from "@/lib/types/product/product.interface";
 
 export interface Category {
   id: number;

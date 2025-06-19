@@ -2,10 +2,10 @@ import { ICategoryCardProps } from "@/components/category-card/category-card.int
 import { ProductCard } from "@/components/product-card/product-card";
 import { serverFetch } from "@/lib/api/api";
 import { DataProduct } from "@/lib/types/category/category-page.interface";
-import { Banner } from "@/pages/home/banner/banner";
-import { Categories } from "@/pages/home/categories/categories";
-import { DiscountForm } from "@/pages/home/discount-form/discount-form";
-import { Sales } from "@/pages/home/sales/sales";
+import  Banner  from "@/pages/home/banner/banner";
+import Categories  from "@/pages/home/categories/categories";
+import DiscountForm  from "@/pages/home/discount-form/discount-form";
+import Sales  from "@/pages/home/sales/sales";
 
 
 export default async function Home() {

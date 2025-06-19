@@ -5,7 +5,7 @@ import { Container } from '@/shared/container/container'
 import { Button } from '@/shared/button/button'
 
 
-export const Banner = () => {
+const Banner = () => {
   return (
     <section className={s.banner}>
       <Image fill objectFit='cover' className={s.banner_image} src={'/images/home_banner.jpg'} quality={70} alt='HomeBanner' />
@@ -20,3 +20,4 @@ export const Banner = () => {
     </section>
   )
 }
+export default Banner

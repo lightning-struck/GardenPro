@@ -27,7 +27,7 @@ export const CartTotal = () => {
             <p className={s.total_info_price}>${getTotalPrice().toFixed(2)}</p>
           </div>
         </div>
-        <FormDiscount endpoint='' form_variant='order' />
+        <FormDiscount endpoint={'/order/send'} form_variant='order' />
       </div>
     </div>
   )

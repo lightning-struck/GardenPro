@@ -1,7 +1,7 @@
-import { Categories as CategoriesPage } from "@/pages/categories/categories"
+import CategoriesPage from "@/pages/categories/categories"
 import { withSSR } from "@/lib/api/withSSR"
 import { serverFetch } from "@/lib/api/api"
-import { ICategoriesPageProps } from "@/pages/categories/categories.interface"
+import { ICategoriesPageProps } from "@/lib/types/categories/categories.interface"
 import { ICategoryCardProps } from "@/components/category-card/category-card.interface"
 
 

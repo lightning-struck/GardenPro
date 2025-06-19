@@ -7,8 +7,8 @@ import { RootState } from '@/lib/redux/store'
 import { CartProducts } from '@/components/cart-products/cart-products'
 import { CartTotal } from '@/components/cart-total/cart-total'
 import { Button } from '@/shared/button/button'
-export const Cart = () => {
-  const { items } = useSelector((state: RootState) => state.cart)
+export default function Cart  () {
+  const { items } = useSelector((state: RootState) => state?.cart)
   const totalItems = items.reduce((total, item) => total + item.quantity, 0)
   const isEmpty = false;
   if (totalItems > 0) {
