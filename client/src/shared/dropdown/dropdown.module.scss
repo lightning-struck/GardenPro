@@ -1,0 +1,92 @@
+@use '../../styles/variables' as v;
+
+.dropdown {
+  border: 1px solid v.$color-grey-divider;
+  padding: 9px 16px;
+  padding-right: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: ease .3s;
+  user-select: none;
+
+  &:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  position: relative;
+}
+
+.selected_value {
+  font-weight: 500;
+  font-size: 16px;
+  color: v.$color-black;
+
+}
+
+.value_wrapper {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options {
+  position: absolute;
+  z-index: 100;
+  top: 39px;
+  padding: 16px 0;
+  background-color: v.$color-white;
+  left: 0;
+  width: 100%;
+  border-radius: 6px;
+  cursor: default;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: ease .2s;
+  transform: translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 16px;
+
+    button {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 126%;
+      letter-spacing: 0%;
+      color: v.$color-txt-grey;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: ease .2s;
+      text-align: left;
+
+      &:disabled {
+        color: v.$color-black;
+        pointer-events: none;
+      }
+
+      &:hover {
+        color: v.$color-black;
+      }
+    }
+  }
+
+}
+
+.open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.arrow {
+  transition: ease .2s;
+}
+
+.arrow_open {
+  transform: rotate(180deg);
+}

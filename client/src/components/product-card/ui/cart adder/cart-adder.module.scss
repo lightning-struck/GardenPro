@@ -1,0 +1,22 @@
+.adder{
+  width: 100%;
+  display: flex;
+
+
+  margin-bottom: 32px;
+  &_visible{
+      gap: 32px;
+  }
+}
+
+.counter{
+  transition:  .3s ease;
+  width: -0 !important;
+  overflow: hidden;
+  border: none !important;
+  &_visible{
+    width: 200px !important;
+    border: 1px solid #ddd !important;
+    overflow: auto;
+  }
+}
